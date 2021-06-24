@@ -12,23 +12,34 @@ export default function Home() {
   return (
     <div className="w-screen h-full flex flex-col">
       <div className="h-full flex flex-col items-center w-full py-8">
-        <Round round={ROUND_OF_SIXTEEN} />
-        <Round prevRound={ROUND_OF_SIXTEEN} round={QUARTERFINALS} />
-        <Round prevRound={QUARTERFINALS} round={SEMIFINALS} />
-        <Round prevRound={SEMIFINALS} round={FINALS} />
+        <Matches />
       </div>
     </div>
   );
 }
 
+const Matches = () => (
+  <>
+    <Round round={ROUND_OF_SIXTEEN} title={'Round of Sixteen'} />
+    <Round
+      prevRound={ROUND_OF_SIXTEEN}
+      round={QUARTERFINALS}
+      title={'Quarterfinals'}
+    />
+    <Round prevRound={QUARTERFINALS} round={SEMIFINALS} title={'Semifinals'} />
+    <Round prevRound={SEMIFINALS} round={FINALS} title={'Finals'} />
+  </>
+);
+
 interface RoundProps {
   round: RoundType;
   prevRound?: RoundType;
+  title: string;
 }
 
-const Round = ({ round, prevRound }: RoundProps) => (
+const Round = ({ round, prevRound, title }: RoundProps) => (
   <div className="py-8">
-    <h1 className="text-3xl font-semibold ml-7">{`Round of 16`}</h1>
+    <h1 className="text-3xl font-semibold ml-7">{title}</h1>
     <div className="mt-4">
       {Object.entries(round).map(([matchNumber, match]) => (
         <Match match={match} matchNumber={matchNumber} prevRound={prevRound} />
