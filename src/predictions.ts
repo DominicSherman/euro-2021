@@ -1,4 +1,4 @@
-enum Teams {
+export enum Teams {
   Italy = 'Italy',
   Switzerland = 'Switzerland',
   Turkey = 'Turkey',
