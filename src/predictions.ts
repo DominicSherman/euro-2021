@@ -731,3 +731,5 @@ export const PREDICTIONS: Predictions = {
     },
   },
 };
+
+export const NAMES = Object.keys(PREDICTIONS);
