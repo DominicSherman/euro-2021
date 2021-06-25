@@ -6,11 +6,17 @@ import {
   RoundType,
   SEMIFINALS,
 } from 'knockout';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Home() {
   return (
     <div className="w-screen h-full flex flex-col">
+      <Link href="/create-prediction">
+        <button className="py-2 px-4 bg-gradient-to-br from-gray-800 to-gray-600 border border-cyan-700 hover:border-white text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-all">
+          Add Knockout Predictions
+        </button>
+      </Link>
       <div className="h-full flex flex-col items-center w-full py-8">
         <Matches />
       </div>

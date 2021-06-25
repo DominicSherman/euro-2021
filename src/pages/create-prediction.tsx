@@ -43,9 +43,12 @@ const Matches = () => {
   const router = useRouter();
 
   const [name, setName] = useState<{ value: string } | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async () => {
     if (name) {
+      setLoading(true);
+
       await fetch('api/submit', {
         body: JSON.stringify({
           content: Buffer.from(JSON.stringify(selections)).toString('base64'),
@@ -55,6 +58,7 @@ const Matches = () => {
       });
 
       await router.push('/');
+      setLoading(false);
     }
   };
 
@@ -96,7 +100,14 @@ const Matches = () => {
         setSelections={setSelections}
         title={'Finals'}
       />
-      <button onClick={onSubmit}>Submit</button>
+      <button
+        className={`py-2 px-4 bg-gradient-to-br from-gray-800 to-gray-600 border border-cyan-700 hover:border-white text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-all ${
+          loading ? 'opacity-50' : ''
+        }`}
+        onClick={onSubmit}
+      >
+        Submit
+      </button>
     </>
   );
 };
