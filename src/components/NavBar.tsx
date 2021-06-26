@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const NavBar = () => {
   return (
     <div className="top-0 w-full flex flex-row justify-center">
-      <div className="container flex flex-col px-8 py-4 w-full max-w-xl text-sm">
+      <div className="container flex flex-col px-8 py-4 w-full max-w-xl text-sm md:text-lg">
         <div className="flex flex-row justify-between content-center">
           <Link href="/">
             <a className="font-medium">{'Standings'}</a>

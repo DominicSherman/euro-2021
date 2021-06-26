@@ -54,12 +54,16 @@ export default function Home({ standingsData }) {
     setData();
   }, [setScoring, standingsData]);
 
+  if (!scoring) {
+    return null;
+  }
+
   return (
     <div className="w-screen h-full flex flex-col">
       <div className="h-full flex flex-col items-center w-full py-8">
         <NavBar />
         <h1 className="text-3xl font-semibold ml-7 mb-4">{`Standings`}</h1>
-        <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl mb-5">
+        <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl mb-5 text-sm md:text-lg">
           <span className="flex flex-row justify-center font-extrabold">
             Rank
           </span>
@@ -77,7 +81,7 @@ export default function Home({ standingsData }) {
           </span>
         </div>
         {scoring.map((item, index) => (
-          <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl">
+          <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl text-sm md:text-lg">
             <span className="flex flex-row justify-center">{index + 1}.</span>
             <span className="flex flex-row justify-center">{item.name}</span>
             <span className="flex flex-row justify-center">
