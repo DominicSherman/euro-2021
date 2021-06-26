@@ -1,14 +1,14 @@
-import { calculatePoints } from 'calculate-points';
+import { calculateGroupPoints } from 'calculate-points';
+import { NavBar } from 'components';
 import { Prediction, PREDICTIONS } from 'predictions';
 import React from 'react';
-
-// import testData from 'test-data.json';
+import groupPlay from 'group-play.json';
 
 export default function GroupPlay({ standingsData }) {
   const predictionsWithPoints = Object.keys(PREDICTIONS).map((name) => {
     const prediction = PREDICTIONS[name];
 
-    const points = calculatePoints(prediction, standingsData);
+    const points = calculateGroupPoints(prediction, standingsData);
 
     return {
       name,
@@ -26,7 +26,8 @@ export default function GroupPlay({ standingsData }) {
   return (
     <div className="w-screen h-full flex flex-col">
       <div className="h-full flex flex-col items-center w-full py-8">
-        <h1 className="text-3xl font-semibold ml-7">{`Euro 2021 Bracket Standings`}</h1>
+        <NavBar />
+        <h1 className="text-3xl font-semibold ml-7">{`Group Play`}</h1>
         <PredictionGroup name="Standings" prediction={standingsData} />
         <div className="h-[2px] w-full max-w-[600px] bg-gray-400 my-4 rounded-md" />
         {sortedPredictionsWithPoints.map((item) => (
@@ -88,21 +89,9 @@ function numToSSColumn(num) {
 }
 
 export const getServerSideProps = async () => {
-  // const standingsData = testData;
+  const standingsData = groupPlay;
 
-  const response = await fetch(
-    'https://api-football-v1.p.rapidapi.com/v3/standings?league=4&season=2020',
-    {
-      headers: {
-        'x-rapidapi-key': process.env.API_KEY || '',
-        'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
-      },
-    }
-  );
-
-  const standingsData = await response.json();
-
-  const standings = standingsData.response[0].league.standings;
+  const standings = [...standingsData.response[0].league.standings];
 
   standings.pop();
 

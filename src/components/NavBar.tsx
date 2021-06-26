@@ -1,11 +1,22 @@
 import React from 'react';
-import * as Options from 'enums/options';
+import Link from 'next/link';
 
 export const NavBar = () => {
   return (
-    <div className="top-0 sticky w-full flex flex-row justify-center">
-      <div className="container flex w-maxflex-row justify-between content-center w-full px-16 py-4">
-        <h2 className="text-xl font-semibold">{Options.APP_TITLE}</h2>
+    <div className="top-0 w-full flex flex-row justify-center">
+      <div className="container flex flex-col px-8 py-4 w-full max-w-xl text-sm">
+        <div className="flex flex-row justify-between content-center">
+          <Link href="/">
+            <a className="font-medium">{'Standings'}</a>
+          </Link>
+          <Link href="/knockouts">
+            <a className="font-medium">{'Knockouts'}</a>
+          </Link>
+          <Link href="/group-play">
+            <a className="font-medium">{'Group Play'}</a>
+          </Link>
+        </div>
+        <div className="h-1 w-full bg-gray-200 rounded-lg my-2" />
       </div>
     </div>
   );

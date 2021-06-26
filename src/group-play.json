@@ -28,19 +28,19 @@
                 "name": "Italy",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/768.png"
               },
-              "points": 6,
-              "goalsDiff": 6,
+              "points": 9,
+              "goalsDiff": 7,
               "group": "Group A",
-              "form": "WW",
+              "form": "WWW",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 2,
-                "win": 2,
+                "played": 3,
+                "win": 3,
                 "draw": 0,
                 "lose": 0,
                 "goals": {
-                  "for": 6,
+                  "for": 7,
                   "against": 0
                 }
               },
@@ -64,7 +64,7 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -74,19 +74,19 @@
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/767.png"
               },
               "points": 4,
-              "goalsDiff": 2,
+              "goalsDiff": 1,
               "group": "Group A",
-              "form": "WD",
+              "form": "LWD",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 2,
+                "played": 3,
                 "win": 1,
                 "draw": 1,
-                "lose": 0,
+                "lose": 1,
                 "goals": {
                   "for": 3,
-                  "against": 1
+                  "against": 2
                 }
               },
               "home": {
@@ -109,7 +109,7 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -118,64 +118,19 @@
                 "name": "Switzerland",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/15.png"
               },
-              "points": 1,
-              "goalsDiff": -3,
+              "points": 4,
+              "goalsDiff": -1,
               "group": "Group A",
-              "form": "LD",
+              "form": "WLD",
               "status": "same",
               "description": "Ranking of third-placed teams",
               "all": {
-                "played": 2,
-                "win": 0,
+                "played": 3,
+                "win": 1,
                 "draw": 1,
                 "lose": 1,
                 "goals": {
-                  "for": 1,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 777,
-                "name": "Turkey",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/777.png"
-              },
-              "points": 0,
-              "goalsDiff": -5,
-              "group": "Group A",
-              "form": "LL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 2,
-                "win": 0,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 0,
+                  "for": 4,
                   "against": 5
                 }
               },
@@ -199,7 +154,52 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 777,
+                "name": "Turkey",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/777.png"
+              },
+              "points": 0,
+              "goalsDiff": -7,
+              "group": "Group A",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 1,
+                  "against": 8
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
             }
           ],
           [
@@ -210,19 +210,19 @@
                 "name": "Belgium",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/1.png"
               },
-              "points": 6,
-              "goalsDiff": 4,
+              "points": 9,
+              "goalsDiff": 6,
               "group": "Group B",
-              "form": "WW",
+              "form": "WWW",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 2,
-                "win": 2,
+                "played": 3,
+                "win": 3,
                 "draw": 0,
                 "lose": 0,
                 "goals": {
-                  "for": 5,
+                  "for": 7,
                   "against": 1
                 }
               },
@@ -246,210 +246,28 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 2,
-              "team": {
-                "id": 4,
-                "name": "Russia",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/4.png"
-              },
-              "points": 3,
-              "goalsDiff": -2,
-              "group": "Group B",
-              "form": "WL",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 2,
-                "win": 1,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1099,
-                "name": "Finland",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1099.png"
-              },
-              "points": 3,
-              "goalsDiff": 0,
-              "group": "Group B",
-              "form": "LW",
-              "status": "same",
-              "description": "Ranking of third-placed teams",
-              "all": {
-                "played": 2,
-                "win": 1,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
               "team": {
                 "id": 21,
                 "name": "Denmark",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/21.png"
               },
-              "points": 0,
-              "goalsDiff": -2,
+              "points": 3,
+              "goalsDiff": 1,
               "group": "Group B",
-              "form": "LL",
+              "form": "WLL",
               "status": "same",
-              "description": null,
+              "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 2,
-                "win": 0,
+                "played": 3,
+                "win": 1,
                 "draw": 0,
                 "lose": 2,
                 "goals": {
-                  "for": 1,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
-                "id": 1118,
-                "name": "Netherlands",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1118.png"
-              },
-              "points": 6,
-              "goalsDiff": 3,
-              "group": "Group C",
-              "form": "WW",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 2,
-                "win": 2,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
                   "for": 5,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 772,
-                "name": "Ukraine",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/772.png"
-              },
-              "points": 3,
-              "goalsDiff": 0,
-              "group": "Group C",
-              "form": "WL",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 2,
-                "win": 1,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 4,
                   "against": 4
                 }
               },
@@ -473,28 +291,28 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 3,
               "team": {
-                "id": 775,
-                "name": "Austria",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/775.png"
+                "id": 1099,
+                "name": "Finland",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1099.png"
               },
               "points": 3,
-              "goalsDiff": 0,
-              "group": "Group C",
-              "form": "LW",
+              "goalsDiff": -2,
+              "group": "Group B",
+              "form": "LLW",
               "status": "same",
               "description": "Ranking of third-placed teams",
               "all": {
-                "played": 2,
+                "played": 3,
                 "win": 1,
                 "draw": 0,
-                "lose": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 3,
+                  "for": 1,
                   "against": 3
                 }
               },
@@ -518,28 +336,165 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 4,
               "team": {
-                "id": 1105,
-                "name": "FYR Macedonia",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1105.png"
+                "id": 4,
+                "name": "Russia",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/4.png"
               },
-              "points": 0,
-              "goalsDiff": -3,
-              "group": "Group C",
-              "form": "LL",
+              "points": 3,
+              "goalsDiff": -5,
+              "group": "Group B",
+              "form": "LWL",
               "status": "same",
               "description": null,
               "all": {
-                "played": 2,
-                "win": 0,
+                "played": 3,
+                "win": 1,
                 "draw": 0,
                 "lose": 2,
                 "goals": {
                   "for": 2,
+                  "against": 7
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 1118,
+                "name": "Netherlands",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1118.png"
+              },
+              "points": 9,
+              "goalsDiff": 6,
+              "group": "Group C",
+              "form": "WWW",
+              "status": "same",
+              "description": "Promotion - Euro (Play Offs)",
+              "all": {
+                "played": 3,
+                "win": 3,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 8,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 775,
+                "name": "Austria",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/775.png"
+              },
+              "points": 6,
+              "goalsDiff": 1,
+              "group": "Group C",
+              "form": "WLW",
+              "status": "same",
+              "description": "Promotion - Euro (Play Offs)",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": {
+                  "for": 4,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 772,
+                "name": "Ukraine",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/772.png"
+              },
+              "points": 3,
+              "goalsDiff": -1,
+              "group": "Group C",
+              "form": "LWL",
+              "status": "same",
+              "description": "Ranking of third-placed teams",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": {
+                  "for": 4,
                   "against": 5
                 }
               },
@@ -563,27 +518,72 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 1105,
+                "name": "FYR Macedonia",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/1105.png"
+              },
+              "points": 0,
+              "goalsDiff": -6,
+              "group": "Group C",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 2,
+                  "against": 8
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
             }
           ],
           [
             {
               "rank": 1,
               "team": {
-                "id": 770,
-                "name": "Czech Republic",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/770.png"
+                "id": 10,
+                "name": "England",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/10.png"
               },
-              "points": 3,
+              "points": 7,
               "goalsDiff": 2,
               "group": "Group D",
-              "form": "W",
+              "form": "WDW",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
-                "win": 1,
-                "draw": 0,
+                "played": 3,
+                "win": 2,
+                "draw": 1,
                 "lose": 0,
                 "goals": {
                   "for": 2,
@@ -610,74 +610,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 2,
-              "team": {
-                "id": 10,
-                "name": "England",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/10.png"
-              },
-              "points": 3,
-              "goalsDiff": 1,
-              "group": "Group D",
-              "form": "W",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 1,
-                "win": 1,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 1,
-                  "against": 0
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
               "team": {
                 "id": 3,
                 "name": "Croatia",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/3.png"
               },
-              "points": 0,
-              "goalsDiff": -1,
+              "points": 4,
+              "goalsDiff": 1,
               "group": "Group D",
-              "form": "L",
+              "form": "WDL",
               "status": "same",
-              "description": "Ranking of third-placed teams",
+              "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 0,
+                "played": 3,
+                "win": 1,
+                "draw": 1,
                 "lose": 1,
                 "goals": {
-                  "for": 0,
-                  "against": 1
+                  "for": 4,
+                  "against": 3
                 }
               },
               "home": {
@@ -700,7 +655,52 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 770,
+                "name": "Czech Republic",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/770.png"
+              },
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Group D",
+              "form": "LDW",
+              "status": "same",
+              "description": "Ranking of third-placed teams",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 3,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -709,19 +709,66 @@
                 "name": "Scotland",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/1108.png"
               },
-              "points": 0,
-              "goalsDiff": -2,
+              "points": 1,
+              "goalsDiff": -4,
               "group": "Group D",
-              "form": "L",
+              "form": "LDL",
               "status": "same",
               "description": null,
               "all": {
-                "played": 1,
+                "played": 3,
                 "win": 0,
-                "draw": 0,
-                "lose": 1,
+                "draw": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 0,
+                  "for": 1,
+                  "against": 5
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 5,
+                "name": "Sweden",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/5.png"
+              },
+              "points": 7,
+              "goalsDiff": 2,
+              "group": "Group E",
+              "form": "WWD",
+              "status": "same",
+              "description": "Promotion - Euro (Play Offs)",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": {
+                  "for": 4,
                   "against": 2
                 }
               },
@@ -745,30 +792,28 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
-            }
-          ],
-          [
+              "update": "2021-06-26T00:00:00+00:00"
+            },
             {
-              "rank": 1,
+              "rank": 2,
               "team": {
-                "id": 773,
-                "name": "Slovakia",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/773.png"
+                "id": 9,
+                "name": "Spain",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/9.png"
               },
-              "points": 3,
-              "goalsDiff": 1,
+              "points": 5,
+              "goalsDiff": 5,
               "group": "Group E",
-              "form": "W",
+              "form": "WDD",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
+                "played": 3,
                 "win": 1,
-                "draw": 0,
+                "draw": 2,
                 "lose": 0,
                 "goals": {
-                  "for": 2,
+                  "for": 6,
                   "against": 1
                 }
               },
@@ -792,74 +837,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 5,
-                "name": "Sweden",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/5.png"
-              },
-              "points": 1,
-              "goalsDiff": 0,
-              "group": "Group E",
-              "form": "D",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 3,
               "team": {
-                "id": 9,
-                "name": "Spain",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/9.png"
+                "id": 773,
+                "name": "Slovakia",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/773.png"
               },
-              "points": 1,
-              "goalsDiff": 0,
+              "points": 3,
+              "goalsDiff": -5,
               "group": "Group E",
-              "form": "D",
+              "form": "LLW",
               "status": "same",
               "description": "Ranking of third-placed teams",
               "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 1,
-                "lose": 0,
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
                 "goals": {
-                  "for": 0,
-                  "against": 0
+                  "for": 2,
+                  "against": 7
                 }
               },
               "home": {
@@ -882,7 +882,7 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -891,20 +891,20 @@
                 "name": "Poland",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/24.png"
               },
-              "points": 0,
-              "goalsDiff": -1,
+              "points": 1,
+              "goalsDiff": -2,
               "group": "Group E",
-              "form": "L",
+              "form": "LDL",
               "status": "same",
               "description": null,
               "all": {
-                "played": 1,
+                "played": 3,
                 "win": 0,
-                "draw": 0,
-                "lose": 1,
+                "draw": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 1,
-                  "against": 2
+                  "for": 4,
+                  "against": 6
                 }
               },
               "home": {
@@ -927,7 +927,189 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 2,
+                "name": "France",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/2.png"
+              },
+              "points": 5,
+              "goalsDiff": 1,
+              "group": "Group F",
+              "form": "DDW",
+              "status": "same",
+              "description": "Promotion - Euro (Play Offs)",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": {
+                  "for": 4,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 25,
+                "name": "Germany",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/25.png"
+              },
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Group F",
+              "form": "DWL",
+              "status": "same",
+              "description": "Promotion - Euro (Play Offs)",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 6,
+                  "against": 5
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 27,
+                "name": "Portugal",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/27.png"
+              },
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Group F",
+              "form": "DLW",
+              "status": "same",
+              "description": "Ranking of third-placed teams",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 7,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 769,
+                "name": "Hungary",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/769.png"
+              },
+              "points": 2,
+              "goalsDiff": -3,
+              "group": "Group F",
+              "form": "DDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 2,
+                "lose": 1,
+                "goals": {
+                  "for": 3,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": {
+                  "for": null,
+                  "against": null
+                }
+              },
+              "update": "2021-06-26T00:00:00+00:00"
             }
           ],
           [
@@ -938,20 +1120,20 @@
                 "name": "Portugal",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/27.png"
               },
-              "points": 3,
-              "goalsDiff": 3,
-              "group": "Group F",
-              "form": "W",
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Ranking of third-placed teams",
+              "form": "DLW",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
+                "played": 3,
                 "win": 1,
-                "draw": 0,
-                "lose": 0,
+                "draw": 1,
+                "lose": 1,
                 "goals": {
-                  "for": 3,
-                  "against": 0
+                  "for": 7,
+                  "against": 6
                 }
               },
               "home": {
@@ -974,29 +1156,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 2,
               "team": {
-                "id": 2,
-                "name": "France",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/2.png"
+                "id": 770,
+                "name": "Czech Republic",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/770.png"
               },
-              "points": 3,
+              "points": 4,
               "goalsDiff": 1,
-              "group": "Group F",
-              "form": "W",
+              "group": "Ranking of third-placed teams",
+              "form": "LDW",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
+                "played": 3,
                 "win": 1,
-                "draw": 0,
-                "lose": 0,
+                "draw": 1,
+                "lose": 1,
                 "goals": {
-                  "for": 1,
-                  "against": 0
+                  "for": 3,
+                  "against": 2
                 }
               },
               "home": {
@@ -1019,29 +1201,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 3,
               "team": {
-                "id": 25,
-                "name": "Germany",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/25.png"
+                "id": 15,
+                "name": "Switzerland",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/15.png"
               },
-              "points": 0,
+              "points": 4,
               "goalsDiff": -1,
-              "group": "Group F",
-              "form": "L",
+              "group": "Ranking of third-placed teams",
+              "form": "WLD",
               "status": "same",
-              "description": "Ranking of third-placed teams",
+              "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 0,
+                "played": 3,
+                "win": 1,
+                "draw": 1,
                 "lose": 1,
                 "goals": {
-                  "for": 0,
-                  "against": 1
+                  "for": 4,
+                  "against": 5
                 }
               },
               "home": {
@@ -1064,76 +1246,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 4,
               "team": {
-                "id": 769,
-                "name": "Hungary",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/769.png"
-              },
-              "points": 0,
-              "goalsDiff": -3,
-              "group": "Group F",
-              "form": "L",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 0,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
-                "id": 775,
-                "name": "Austria",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/775.png"
+                "id": 772,
+                "name": "Ukraine",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/772.png"
               },
               "points": 3,
-              "goalsDiff": 0,
+              "goalsDiff": -1,
               "group": "Ranking of third-placed teams",
-              "form": "LW",
+              "form": "LWL",
               "status": "same",
               "description": "Promotion - Euro (Play Offs)",
               "all": {
-                "played": 2,
+                "played": 3,
                 "win": 1,
                 "draw": 0,
-                "lose": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 3,
-                  "against": 3
+                  "for": 4,
+                  "against": 5
                 }
               },
               "home": {
@@ -1156,164 +1291,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
-              "rank": 2,
+              "rank": 5,
               "team": {
                 "id": 1099,
                 "name": "Finland",
                 "logo": "https:\/\/media.api-sports.io\/football\/teams\/1099.png"
               },
               "points": 3,
-              "goalsDiff": 0,
+              "goalsDiff": -2,
               "group": "Ranking of third-placed teams",
-              "form": "LW",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 2,
-                "win": 1,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 9,
-                "name": "Spain",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/9.png"
-              },
-              "points": 1,
-              "goalsDiff": 0,
-              "group": "Ranking of third-placed teams",
-              "form": "D",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 1,
-                "win": 0,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 15,
-                "name": "Switzerland",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/15.png"
-              },
-              "points": 1,
-              "goalsDiff": -3,
-              "group": "Ranking of third-placed teams",
-              "form": "LD",
-              "status": "same",
-              "description": "Promotion - Euro (Play Offs)",
-              "all": {
-                "played": 2,
-                "win": 0,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "away": {
-                "played": null,
-                "win": null,
-                "draw": null,
-                "lose": null,
-                "goals": {
-                  "for": null,
-                  "against": null
-                }
-              },
-              "update": "2021-06-18T00:00:00+00:00"
-            },
-            {
-              "rank": 5,
-              "team": {
-                "id": 25,
-                "name": "Germany",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/25.png"
-              },
-              "points": 0,
-              "goalsDiff": -1,
-              "group": "Ranking of third-placed teams",
-              "form": "L",
+              "form": "LLW",
               "status": "same",
               "description": null,
               "all": {
-                "played": 1,
-                "win": 0,
+                "played": 3,
+                "win": 1,
                 "draw": 0,
-                "lose": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 0,
-                  "against": 1
+                  "for": 1,
+                  "against": 3
                 }
               },
               "home": {
@@ -1336,29 +1336,29 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             },
             {
               "rank": 6,
               "team": {
-                "id": 3,
-                "name": "Croatia",
-                "logo": "https:\/\/media.api-sports.io\/football\/teams\/3.png"
+                "id": 773,
+                "name": "Slovakia",
+                "logo": "https:\/\/media.api-sports.io\/football\/teams\/773.png"
               },
-              "points": 0,
-              "goalsDiff": -1,
+              "points": 3,
+              "goalsDiff": -5,
               "group": "Ranking of third-placed teams",
-              "form": "L",
+              "form": "LLW",
               "status": "same",
               "description": null,
               "all": {
-                "played": 1,
-                "win": 0,
+                "played": 3,
+                "win": 1,
                 "draw": 0,
-                "lose": 1,
+                "lose": 2,
                 "goals": {
-                  "for": 0,
-                  "against": 1
+                  "for": 2,
+                  "against": 7
                 }
               },
               "home": {
@@ -1381,7 +1381,7 @@
                   "against": null
                 }
               },
-              "update": "2021-06-18T00:00:00+00:00"
+              "update": "2021-06-26T00:00:00+00:00"
             }
           ]
         ]

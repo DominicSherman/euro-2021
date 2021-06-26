@@ -1,3 +1,5 @@
+import { FINALS, QUARTERFINALS, SEMIFINALS } from './knockout';
+import { ROUND_OF_SIXTEEN } from 'knockout';
 import { Prediction } from 'predictions';
 
 const rightTeamRightPlace = (rank, team, groupStandings) => {
@@ -23,27 +25,30 @@ const rightTeamWrongPlace = (rank, team, groupStandings) => {
   return false;
 };
 
-export const calculatePoints = (
+export const calculateGroupPoints = (
   prediction: Prediction,
   standings: Prediction
 ) => {
   const groupedPoints = {};
 
+  console.log({ standings });
   Object.entries(prediction).forEach(([group, predictions]) => {
     const groupStandings = standings[group];
 
     let groupTotal = 0;
 
-    Object.entries(predictions).forEach(([rank, team], index) => {
-      // do not check for 4th place
-      if (index !== 3) {
-        if (rightTeamRightPlace(rank, team, groupStandings)) {
-          groupTotal = groupTotal + 6;
-        } else if (rightTeamWrongPlace(rank, team, groupStandings)) {
-          groupTotal = groupTotal + 3;
+    if (groupStandings) {
+      Object.entries(predictions).forEach(([rank, team], index) => {
+        // do not check for 4th place
+        if (index !== 3) {
+          if (rightTeamRightPlace(rank, team, groupStandings)) {
+            groupTotal = groupTotal + 6;
+          } else if (rightTeamWrongPlace(rank, team, groupStandings)) {
+            groupTotal = groupTotal + 3;
+          }
         }
-      }
-    });
+      });
+    }
 
     groupedPoints[group] = groupTotal;
   });
@@ -59,4 +64,31 @@ export const calculatePoints = (
     ...groupedPoints,
     total,
   };
+};
+
+const getPointForMatch = (roundData, matchNumber, winner, score) => {
+  if (roundData[matchNumber.toString()]) {
+    const match = roundData[matchNumber.toString()];
+
+    if (match.winner && match.winner === winner) {
+      return score;
+    }
+  }
+
+  return 0;
+};
+
+export const calculateKnockoutPoints = (predictions) => {
+  let total = 0;
+
+  if (predictions) {
+    Object.entries(predictions).forEach(([matchNumber, winner]) => {
+      total += getPointForMatch(ROUND_OF_SIXTEEN, matchNumber, winner, 10);
+      total += getPointForMatch(QUARTERFINALS, matchNumber, winner, 15);
+      total += getPointForMatch(SEMIFINALS, matchNumber, winner, 120);
+      total += getPointForMatch(FINALS, matchNumber, winner, 30);
+    });
+  }
+
+  return total;
 };

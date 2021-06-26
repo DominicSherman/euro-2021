@@ -1,86 +1,139 @@
+import { NavBar } from 'components';
+import React, { useEffect, useState } from 'react';
+import groupPlay from 'group-play.json';
+import { NAMES, PREDICTIONS } from 'predictions';
 import {
-  FINALS,
-  MatchType,
-  QUARTERFINALS,
-  ROUND_OF_SIXTEEN,
-  RoundType,
-  SEMIFINALS,
-} from 'knockout';
-import Link from 'next/link';
-import React from 'react';
+  calculateGroupPoints,
+  calculateKnockoutPoints,
+} from 'calculate-points';
 
-export default function Home() {
+export default function Home({ standingsData }) {
+  const [scoring, setScoring] = useState<any | null>(null);
+
+  useEffect(() => {
+    const setData = async () => {
+      const groupPoints = Object.keys(PREDICTIONS).map((name) => {
+        const prediction = PREDICTIONS[name];
+
+        const points = calculateGroupPoints(prediction, standingsData);
+
+        return {
+          name,
+          groupTotal: points.total,
+        };
+      });
+
+      let points: any = [];
+
+      for (let i = 0; i < NAMES.length; i++) {
+        const name = NAMES[i];
+
+        const data = await import(`../../knockout-predictions/${name}.json`);
+        const knockoutPoints = calculateKnockoutPoints(data);
+        const groupPointItem = groupPoints.find((item) => item.name === name);
+
+        if (groupPointItem) {
+          points = [
+            ...points,
+            {
+              ...groupPointItem,
+              knockoutTotal: knockoutPoints,
+              // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+              // @ts-ignore
+              total: knockoutPoints + groupPointItem.groupTotal,
+            },
+          ];
+        }
+      }
+
+      const sortedPoints = points.sort((a, b) => b.total - a.total);
+
+      setScoring(sortedPoints);
+    };
+
+    setData();
+  }, [setScoring, standingsData]);
+
   return (
     <div className="w-screen h-full flex flex-col">
-      <Link href="/create-prediction">
-        <button className="py-2 px-4 bg-gradient-to-br from-gray-800 to-gray-600 border border-cyan-700 hover:border-white text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-all">
-          Add Knockout Predictions
-        </button>
-      </Link>
       <div className="h-full flex flex-col items-center w-full py-8">
-        <Matches />
+        <NavBar />
+        <h1 className="text-3xl font-semibold ml-7 mb-4">{`Standings`}</h1>
+        <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl mb-5">
+          <span className="flex flex-row justify-center font-extrabold">
+            Rank
+          </span>
+          <span className="flex flex-row justify-center font-extrabold">
+            Name
+          </span>
+          <span className="flex flex-row justify-center font-extrabold">
+            Group
+          </span>
+          <span className="flex flex-row justify-center font-extrabold">
+            Knockout
+          </span>
+          <span className="flex flex-row justify-center font-extrabold">
+            Total
+          </span>
+        </div>
+        {scoring.map((item, index) => (
+          <div className="grid grid-flow-row grid-cols-5 w-full max-w-xl">
+            <span className="flex flex-row justify-center">{index + 1}.</span>
+            <span className="flex flex-row justify-center">{item.name}</span>
+            <span className="flex flex-row justify-center">
+              {item.groupTotal}
+            </span>
+            <span className="flex flex-row justify-center">
+              {item.knockoutTotal}
+            </span>
+            <span className="flex flex-row justify-center">{item.total}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
-const Matches = () => (
-  <>
-    <Round round={ROUND_OF_SIXTEEN} title={'Round of Sixteen'} />
-    <Round
-      prevRound={ROUND_OF_SIXTEEN}
-      round={QUARTERFINALS}
-      title={'Quarterfinals'}
-    />
-    <Round prevRound={QUARTERFINALS} round={SEMIFINALS} title={'Semifinals'} />
-    <Round prevRound={SEMIFINALS} round={FINALS} title={'Finals'} />
-  </>
-);
+function numToSSColumn(num) {
+  let s = '',
+    t;
 
-interface RoundProps {
-  round: RoundType;
-  prevRound?: RoundType;
-  title: string;
-}
-
-const Round = ({ round, prevRound, title }: RoundProps) => (
-  <div className="py-8">
-    <h1 className="text-3xl font-semibold ml-7">{title}</h1>
-    <div className="mt-4">
-      {Object.entries(round).map(([matchNumber, match]) => (
-        <Match match={match} matchNumber={matchNumber} prevRound={prevRound} />
-      ))}
-    </div>
-  </div>
-);
-
-interface MatchProps {
-  match: MatchType;
-  matchNumber: string;
-  prevRound?: RoundType;
-}
-
-const getTeam = (team: string | number, prevRound?: RoundType) => {
-  if (typeof team === 'string') {
-    return team;
+  while (num > 0) {
+    t = (num - 1) % 26;
+    s = String.fromCharCode(65 + t) + s;
+    num = ((num - t) / 26) | 0;
   }
 
-  if (prevRound) {
-    const match = prevRound[team.toString()];
+  return s || '';
+}
 
-    return match.winner || `Winner of game ${team}`;
-  }
+export const getServerSideProps = async () => {
+  const standingsData = groupPlay;
 
-  return 'undefined';
-};
+  const standings = [...standingsData.response[0].league.standings];
 
-const Match = ({ match, prevRound, matchNumber }: MatchProps) => {
-  return (
-    <div className="flex flex-row">
-      <span>{matchNumber}.</span>
-      <span className="ml-1">{getTeam(match.home, prevRound)}</span>
-      <span className="ml-1"> - </span>
-      <span className="ml-1">{getTeam(match.away, prevRound)}</span>
-    </div>
-  );
+  standings.pop();
+
+  const mappedStandingsData = standings.reduce((accum, group, index) => {
+    const groupName = numToSSColumn(index + 1);
+
+    const groupStandings = group.reduce(
+      (accum2, team) => ({
+        ...accum2,
+        [team.rank]: team.team.name,
+      }),
+      {}
+    );
+
+    return {
+      ...accum,
+      [groupName]: groupStandings,
+    };
+  }, {});
+
+  return {
+    props: {
+      standingsData: mappedStandingsData,
+    },
+  };
 };
