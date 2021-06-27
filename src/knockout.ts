@@ -14,7 +14,7 @@ export const ROUND_OF_SIXTEEN: RoundType = {
   1: {
     home: Teams.Belgium,
     away: Teams.Portugal,
-    winner: null,
+    winner: Teams.Belgium,
   },
   2: {
     home: Teams.Italy,
