@@ -168,8 +168,8 @@ const Match = ({ match, prevRound, matchNumber, selections }: MatchProps) => {
       <span>{matchNumber}.</span>
       <span
         className={`ml-1 ${
-          (!selectedWinner && selectedWinner === homeTeam) ||
-          match.winner === homeTeam
+          (selectedWinner && selectedWinner === homeTeam) ||
+          (!selectedWinner && match.winner === homeTeam)
             ? 'font-extrabold'
             : ''
         }`}
@@ -179,8 +179,8 @@ const Match = ({ match, prevRound, matchNumber, selections }: MatchProps) => {
       <span className="ml-1"> - </span>
       <span
         className={`ml-1 ${
-          (!selectedWinner && selectedWinner === awayTeam) ||
-          match.winner === awayTeam
+          (selectedWinner && selectedWinner === awayTeam) ||
+          (!selectedWinner && match.winner === awayTeam)
             ? 'font-extrabold'
             : ''
         }`}
