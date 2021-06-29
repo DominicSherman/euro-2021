@@ -24,7 +24,7 @@ export const ROUND_OF_SIXTEEN: RoundType = {
   3: {
     home: Teams.France,
     away: Teams.Switzerland,
-    winner: null,
+    winner: Teams.Switzerland,
   },
   4: {
     home: Teams.Croatia,
@@ -39,7 +39,7 @@ export const ROUND_OF_SIXTEEN: RoundType = {
   6: {
     home: Teams.England,
     away: Teams.Germany,
-    winner: null,
+    winner: Teams.England,
   },
   7: {
     home: Teams.Netherlands,
