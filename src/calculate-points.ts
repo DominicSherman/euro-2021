@@ -85,7 +85,7 @@ export const calculateKnockoutPoints = (predictions) => {
     Object.entries(predictions).forEach(([matchNumber, winner]) => {
       total += getPointForMatch(ROUND_OF_SIXTEEN, matchNumber, winner, 10);
       total += getPointForMatch(QUARTERFINALS, matchNumber, winner, 15);
-      total += getPointForMatch(SEMIFINALS, matchNumber, winner, 120);
+      total += getPointForMatch(SEMIFINALS, matchNumber, winner, 20);
       total += getPointForMatch(FINALS, matchNumber, winner, 30);
     });
   }
