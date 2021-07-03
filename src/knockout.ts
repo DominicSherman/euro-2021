@@ -67,12 +67,12 @@ export const QUARTERFINALS: RoundType = {
   11: {
     home: 5,
     away: 6,
-    winner: null,
+    winner: Teams.England,
   },
   12: {
     home: 7,
     away: 8,
-    winner: null,
+    winner: Teams.Denmark,
   },
 };
 
