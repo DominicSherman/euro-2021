@@ -85,7 +85,7 @@ export const SEMIFINALS: RoundType = {
   14: {
     home: 11,
     away: 12,
-    winner: null,
+    winner: Teams.England,
   },
 };
 
