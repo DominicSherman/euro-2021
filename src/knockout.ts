@@ -93,6 +93,6 @@ export const FINALS: RoundType = {
   15: {
     home: 13,
     away: 14,
-    winner: null,
+    winner: Teams.Italy,
   },
 };
